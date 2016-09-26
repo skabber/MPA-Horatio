@@ -71,6 +71,11 @@
 		EDB09E031D85BF34000FC309 /* ServiceRequestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB09DB11D85BF34000FC309 /* ServiceRequestStatus.swift */; };
 		EDB09E041D85BF34000FC309 /* ServiceSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB09DB21D85BF34000FC309 /* ServiceSession.swift */; };
 		EDC073861D8AE2ED00ADEBC9 /* JSONServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC073851D8AE2ED00ADEBC9 /* JSONServiceRequest.swift */; };
+		EDCA91AA1D8B2A4800F8F885 /* ResultInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA91A91D8B2A4800F8F885 /* ResultInjectable.swift */; };
+		EDCA91AD1D8B2F7A00F8F885 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA91AC1D8B2F7A00F8F885 /* Particle.swift */; };
+		EDCA91AF1D8B399300F8F885 /* ParticleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA91AE1D8B399300F8F885 /* ParticleObserver.swift */; };
+		EDCA91B11D8C349900F8F885 /* ParticleBlockObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA91B01D8C349900F8F885 /* ParticleBlockObservers.swift */; };
+		EDCA91B31D8C35BA00F8F885 /* Operation+Particles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA91B21D8C35BA00F8F885 /* Operation+Particles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +167,11 @@
 		EDB09DB11D85BF34000FC309 /* ServiceRequestStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequestStatus.swift; sourceTree = "<group>"; };
 		EDB09DB21D85BF34000FC309 /* ServiceSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceSession.swift; sourceTree = "<group>"; };
 		EDC073851D8AE2ED00ADEBC9 /* JSONServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONServiceRequest.swift; sourceTree = "<group>"; };
+		EDCA91A91D8B2A4800F8F885 /* ResultInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultInjectable.swift; sourceTree = "<group>"; };
+		EDCA91AC1D8B2F7A00F8F885 /* Particle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Particle.swift; path = Particles/Particle.swift; sourceTree = "<group>"; };
+		EDCA91AE1D8B399300F8F885 /* ParticleObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParticleObserver.swift; path = Particles/ParticleObserver.swift; sourceTree = "<group>"; };
+		EDCA91B01D8C349900F8F885 /* ParticleBlockObservers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParticleBlockObservers.swift; path = Particles/ParticleBlockObservers.swift; sourceTree = "<group>"; };
+		EDCA91B21D8C35BA00F8F885 /* Operation+Particles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Operation+Particles.swift"; path = "Particles/Operation+Particles.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +263,7 @@
 		EDB09D5D1D85BF34000FC309 /* Horatio */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA91AB1D8B2F5700F8F885 /* Particles */,
 				EDB09D5E1D85BF34000FC309 /* Container */,
 				EDB09D761D85BF34000FC309 /* Operations */,
 				EDB09D6C1D85BF34000FC309 /* Features */,
@@ -385,6 +396,18 @@
 				EDB09D9A1D85BF34000FC309 /* TimeoutObserver.swift */,
 			);
 			name = Observers;
+			sourceTree = "<group>";
+		};
+		EDCA91AB1D8B2F5700F8F885 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA91AC1D8B2F7A00F8F885 /* Particle.swift */,
+				EDCA91B21D8C35BA00F8F885 /* Operation+Particles.swift */,
+				EDCA91AE1D8B399300F8F885 /* ParticleObserver.swift */,
+				EDCA91A91D8B2A4800F8F885 /* ResultInjectable.swift */,
+				EDCA91B01D8C349900F8F885 /* ParticleBlockObservers.swift */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,20 +549,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB09DDE1D85BF34000FC309 /* NegatedCondition.swift in Sources */,
+				EDCA91AD1D8B2F7A00F8F885 /* Particle.swift in Sources */,
 				EDB09DEA1D85BF34000FC309 /* PassbookCondition.swift in Sources */,
 				EDC073861D8AE2ED00ADEBC9 /* JSONServiceRequest.swift in Sources */,
 				EDB09DEB1D85BF34000FC309 /* PhotosCondition.swift in Sources */,
 				EDB09DC71D85BF34000FC309 /* FeatureManager.swift in Sources */,
+				EDCA91AA1D8B2A4800F8F885 /* ResultInjectable.swift in Sources */,
 				EDB09D2D1D85BD25000FC309 /* ViewController.swift in Sources */,
 				EDB09DD71D85BF34000FC309 /* ExclusivityController.swift in Sources */,
 				EDB09E011D85BF34000FC309 /* ServiceRequestDecorator.swift in Sources */,
 				EDB09E001D85BF34000FC309 /* ServiceRequestConfigurator.swift in Sources */,
+				EDCA91B31D8C35BA00F8F885 /* Operation+Particles.swift in Sources */,
 				EDB09DCE1D85BF34000FC309 /* AlertOperation.swift in Sources */,
 				EDB09DCC1D85BF34000FC309 /* JSONServiceResponseProcessor.swift in Sources */,
 				EDB09DD31D85BF34000FC309 /* CloudCondition.swift in Sources */,
 				EDB09DF91D85BF34000FC309 /* TaskScheduler.swift in Sources */,
 				EDB09DED1D85BF34000FC309 /* RemoteNotificationCondition.swift in Sources */,
 				EDB09DF11D85BF34000FC309 /* URLSessionTaskOperation.swift in Sources */,
+				EDCA91B11D8C349900F8F885 /* ParticleBlockObservers.swift in Sources */,
 				EDB09DFC1D85BF34000FC309 /* ServiceEndpoint+JSONParsing.swift in Sources */,
 				EDB09DE81D85BF34000FC309 /* OperationObserver.swift in Sources */,
 				EDB09E031D85BF34000FC309 /* ServiceRequestStatus.swift in Sources */,
@@ -566,6 +593,7 @@
 				EDB09D2B1D85BD25000FC309 /* AppDelegate.swift in Sources */,
 				EDB09DE31D85BF34000FC309 /* NSOperation+Operations.swift in Sources */,
 				EDB09DD21D85BF34000FC309 /* CKContainer+Operations.swift in Sources */,
+				EDCA91AF1D8B399300F8F885 /* ParticleObserver.swift in Sources */,
 				EDB09DC81D85BF34000FC309 /* FeatureSelector.swift in Sources */,
 				EDB09DCF1D85BF34000FC309 /* BlockObserver.swift in Sources */,
 				EDB09DE11D85BF34000FC309 /* NSLock+Operations.swift in Sources */,
