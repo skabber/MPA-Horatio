@@ -89,14 +89,14 @@ open class JSONServiceResponseProcessor: ServiceResponseProcessor {
     // MARK: - Private
 
     fileprivate func processObject(_ request: ServiceRequest, jsonObject: JSONObject, completionBlock: @escaping (ServiceResponseProcessorParam) -> Void) {
-        jsonProcessor.processJSONData(request, jsonData: jsonObject, completionBlock: { (errors: [NSError]?) in
+        jsonProcessor.processJSONData(request, jsonData: jsonObject) { (errors: [NSError]?) in
             if let error = errors?.first {
                 completionBlock(.error(error))
                 return
             }
-
+            
             completionBlock(.processed(true))
-        })
+        }
     }
 
 
